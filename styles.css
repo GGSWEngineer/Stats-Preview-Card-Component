@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+
+  color: #fff;
+}
+
+main {
+  height: 100%;
+  min-height: 956px;
+  background-color: #0a0c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 327px;
+  height: 780px;
+  background: #1b1937;
+  border-radius: 8px;
+  position: relative;
+}
+
+.inner-container {
+  margin-top: -5px;
+  padding: 40px 32px 32px 32px;
+}
+
+img,
+.pink-img {
+  width: 327px;
+  height: 240px;
+  object-fit: contain;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.pink-img {
+  mix-blend-mode: multiply;
+  background: #ab5cdb;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.75;
+}
+
+.inner-container h1 {
+  margin-bottom: 16px;
+}
+
+.inner-container .description {
+  margin-bottom: 40px;
+}
+
+.companies,
+.templates {
+  margin-bottom: 24px;
+}
+
+.container h1,
+.container span {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px; /* 114.286% */
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container span {
+  color: #ab5cdb;
+}
+
+.inner-container > p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+  opacity: 0.75;
+}
+
+.group {
+  text-align: center;
+}
+
+.group h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.group p {
+  text-align: center;
+  font-family: Lexend Deca;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 25px; /* 208.333% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1110px;
+    height: 446px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  img, .pink-img {
+    width: 540px;
+    height: 446px;
+    max-height: none;
+    object-fit: cover;
+    border-radius: 0px 8px 8px 0px;
+    left: 570px;
+  }
+
+
+  .inner-container {
+    width: 570px;
+    height: 446px;
+    padding: 71px 72px 72px 59px;
+  }
+
+  .container h1,
+  .container span {
+    font-size: 36px;
+    line-height: 44px; /* 122.222% */
+  }
+
+  .group-container {
+    display: flex;
+    column-gap: 63.5px;
+  }
+
+  .container h1,
+  .inner-container .description {
+    text-align: left;
+  }
+
+  .inner-container h1 {
+    margin-bottom: 25px;
+  }
+
+  .inner-container .description {
+    margin-bottom: 72px;
+  }
+
+  .group.companies,
+  .group.templates,
+  .group.queries {
+    margin: 0;
+  }
+}
